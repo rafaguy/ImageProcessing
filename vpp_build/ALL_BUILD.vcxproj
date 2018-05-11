@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{01F62578-9BB7-3C18-B7ED-AFECCE37DEB3}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/PROJECTS/VIDEO++/vpp/externals/iod/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/PROJECTS/VIDEO++/vpp/externals/iod -BC:/PROJECTS/VIDEO++/vpp/externals/iod/vpp_build --check-stamp-file C:/PROJECTS/VIDEO++/vpp/externals/iod/vpp_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/PROJECTS/VIDEO++/vpp/externals/iod/CMakeLists.txt;C:\PROJECTS\VIDEO++\vpp\externals\iod\CMakeLists.txt;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeCCompiler.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindBoost.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/PROJECTS/VIDEO++/vpp/externals/iod/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/PROJECTS/VIDEO++/vpp/externals/iod -BC:/PROJECTS/VIDEO++/vpp/externals/iod/vpp_build --check-stamp-file C:/PROJECTS/VIDEO++/vpp/externals/iod/vpp_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/PROJECTS/VIDEO++/vpp/externals/iod/CMakeLists.txt;C:\PROJECTS\VIDEO++\vpp\externals\iod\CMakeLists.txt;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeCCompiler.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindBoost.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/PROJECTS/VIDEO++/vpp/externals/iod/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/PROJECTS/VIDEO++/vpp/externals/iod -BC:/PROJECTS/VIDEO++/vpp/externals/iod/vpp_build --check-stamp-file C:/PROJECTS/VIDEO++/vpp/externals/iod/vpp_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/PROJECTS/VIDEO++/vpp/externals/iod/CMakeLists.txt;C:\PROJECTS\VIDEO++\vpp\externals\iod\CMakeLists.txt;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeCCompiler.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindBoost.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/PROJECTS/VIDEO++/vpp/externals/iod/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/PROJECTS/VIDEO++/vpp/externals/iod -BC:/PROJECTS/VIDEO++/vpp/externals/iod/vpp_build --check-stamp-file C:/PROJECTS/VIDEO++/vpp/externals/iod/vpp_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/PROJECTS/VIDEO++/vpp/externals/iod/CMakeLists.txt;C:\PROJECTS\VIDEO++\vpp\externals\iod\CMakeLists.txt;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInitialize.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeCCompiler.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\3.11.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.11\Modules\FindBoost.cmake;C:\PROJECTS\VIDEO++\vpp\externals\iod\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\ZERO_CHECK.vcxproj">
+      <Project>{52EF6C07-E6A8-378D-9C7C-C8B303365D15}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\aos_view.vcxproj">
+      <Project>{A4C98ABD-D656-3E42-8CCA-90290868121D}</Project>
+      <Name>aos_view</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\apply.vcxproj">
+      <Project>{CB20EAE1-ECC6-38C6-9B02-F39E0E19767A}</Project>
+      <Name>apply</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\array_view.vcxproj">
+      <Project>{C587A5B0-2AB3-3A85-93DE-57ECE775BE55}</Project>
+      <Name>array_view</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\bind_method.vcxproj">
+      <Project>{C7CC54E8-084A-31F3-85F5-BCB66F148FD6}</Project>
+      <Name>bind_method</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\callable_traits.vcxproj">
+      <Project>{74DA10D8-CB53-36F9-9279-480B78CD4A91}</Project>
+      <Name>callable_traits</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\core.vcxproj">
+      <Project>{9191A66F-BDD2-34E5-8ECA-E726BD7173B5}</Project>
+      <Name>core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\deep_merge.vcxproj">
+      <Project>{4BC583D2-0542-3285-A853-F6D958A4B7C9}</Project>
+      <Name>deep_merge</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\di.vcxproj">
+      <Project>{793EA1D3-7F9F-30C3-AAAA-66FCF0433F39}</Project>
+      <Name>di</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\foreach.vcxproj">
+      <Project>{0DCC26C8-0A2E-3357-B59F-7DEA8373A87E}</Project>
+      <Name>foreach</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tools\iod_generate_symbols.vcxproj">
+      <Project>{BEDA1F51-5C3A-3E66-A028-8B204E4E7190}</Project>
+      <Name>iod_generate_symbols</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\json.vcxproj">
+      <Project>{304B1E57-1874-30B5-8476-467A59FE3AFF}</Project>
+      <Name>json</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\options.vcxproj">
+      <Project>{79E28546-A373-3CAA-88FC-63E9B1D4B9E6}</Project>
+      <Name>options</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\parse_command_line.vcxproj">
+      <Project>{1710132B-1312-35E1-AE5E-0D8BADDFC4D4}</Project>
+      <Name>parse_command_line</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\readme.vcxproj">
+      <Project>{51711739-558F-38D9-8C20-FA6DD9ABFF70}</Project>
+      <Name>readme</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\tuple.vcxproj">
+      <Project>{CE21820C-A5E8-335B-9EED-4CECBA702A0D}</Project>
+      <Name>tuple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\tests\variable.vcxproj">
+      <Project>{881CFBBA-4729-3F1C-8E49-92CD963583E8}</Project>
+      <Name>variable</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

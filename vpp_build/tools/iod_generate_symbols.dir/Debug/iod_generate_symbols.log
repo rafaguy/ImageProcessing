@@ -1,0 +1,13 @@
+﻿  iod_generate_symbols.cc
+c:\projects\video++\vpp\externals\iod\tools\iod_generate_symbols.cc(45): warning C4018: '<': signed/unsigned mismatch
+c:\projects\video++\vpp\externals\iod\tools\iod_generate_symbols.cc(54): warning C4018: '<': signed/unsigned mismatch
+c:\projects\video++\vpp\externals\iod\tools\iod_generate_symbols.cc(70): error C2672: 'std::isalnum': no matching overloaded function found
+c:\projects\video++\vpp\externals\iod\tools\iod_generate_symbols.cc(70): error C2780: 'bool std::isalnum(_Elem,const std::locale &)': expects 2 arguments - 1 provided
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\locale(191): note: see declaration of 'std::isalnum'
+c:\projects\video++\vpp\externals\iod\tools\iod_generate_symbols.cc(101): error C2672: 'std::isdigit': no matching overloaded function found
+c:\projects\video++\vpp\externals\iod\tools\iod_generate_symbols.cc(101): error C2780: 'bool std::isdigit(_Elem,const std::locale &)': expects 2 arguments - 1 provided
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\locale(219): note: see declaration of 'std::isdigit'
+c:\projects\video++\vpp\externals\iod\tools\iod_generate_symbols.cc(109): warning C4018: '<': signed/unsigned mismatch
+c:\projects\video++\vpp\externals\iod\tools\iod_generate_symbols.cc(110): error C2672: 'std::isdigit': no matching overloaded function found
+c:\projects\video++\vpp\externals\iod\tools\iod_generate_symbols.cc(110): error C2780: 'bool std::isdigit(_Elem,const std::locale &)': expects 2 arguments - 1 provided
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\locale(219): note: see declaration of 'std::isdigit'

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\PROJECTS\VIDEO++\vpp\externals\iod\vpp_build\CMakeFiles\82f90b99f112ea22edcf2a3f661f7804\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6BD0D7C4-CD04-3CE5-AE77-B86272DB4FAE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
